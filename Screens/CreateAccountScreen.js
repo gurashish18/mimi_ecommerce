@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import { StyleSheet, Text, View, ScrollView, Image } from 'react-native'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import { useNavigation } from '@react-navigation/native'
+import {AuthContext} from '../nav/AuthProvider'
 
 const CreateAccountScreen = () => {
     const navigation = useNavigation()
@@ -10,6 +11,7 @@ const CreateAccountScreen = () => {
     const[mobile, setmobile] = useState('')
     const[email, setemail] = useState('')
     const[password, setpassword] = useState('')
+    const {register} = useContext(AuthContext)
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}} contentContainerStyle={styles.container}>
         <Image source={require('../assets/mimi_logo.png')} style={{width: 100, height: 100, resizeMode: 'contain'}}/>
@@ -19,7 +21,7 @@ const CreateAccountScreen = () => {
             <Input value={mobile} setvalue={setmobile} placeholder="Mobile Number" icon="link"/>
             <Input value={email} setvalue={setemail} placeholder="Username" icon="user"/>
             <Input value={password} setvalue={setpassword} placeholder="Password" icon="lock"/>
-            <Button buttontext="Sign Up" onPress={()=>navigation.navigate("OTPverify")}/>
+            <Button buttontext="Sign Up" onPress={()=>register(email, password, name, mobile, )}/>
 
             <View style={{flexDirection: 'row', alignSelf: 'center', marginVertical: 20}}>
                 <Text style={{color: 'grey', fontSize: 16}}>Already have an Account? </Text>

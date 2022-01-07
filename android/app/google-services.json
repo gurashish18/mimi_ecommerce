@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617954161772",
+    "project_id": "mimi-e9507",
+    "storage_bucket": "mimi-e9507.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617954161772:android:9d5cec47dc1e0a067b5449",
+        "android_client_info": {
+          "package_name": "com.mimi_ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617954161772-js55agmrc62f4m198vf7gl7d61m1usak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBitPWRcwJTFKeV1l0wfkXPnGP6nCBxc4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617954161772-js55agmrc62f4m198vf7gl7d61m1usak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
