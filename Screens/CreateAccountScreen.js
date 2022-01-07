@@ -2,8 +2,10 @@ import React, {useState} from 'react'
 import { StyleSheet, Text, View, ScrollView, Image } from 'react-native'
 import Button from '../components/Button'
 import Input from '../components/Input'
+import { useNavigation } from '@react-navigation/native'
 
 const CreateAccountScreen = () => {
+    const navigation = useNavigation()
     const[name, setname] = useState('')
     const[mobile, setmobile] = useState('')
     const[email, setemail] = useState('')
@@ -17,11 +19,11 @@ const CreateAccountScreen = () => {
             <Input value={mobile} setvalue={setmobile} placeholder="Mobile Number" icon="link"/>
             <Input value={email} setvalue={setemail} placeholder="Username" icon="user"/>
             <Input value={password} setvalue={setpassword} placeholder="Password" icon="lock"/>
-            <Button buttontext="Sign Up"/>
+            <Button buttontext="Sign Up" onPress={()=>navigation.navigate("OTPverify")}/>
 
             <View style={{flexDirection: 'row', alignSelf: 'center', marginVertical: 20}}>
                 <Text style={{color: 'grey', fontSize: 16}}>Already have an Account? </Text>
-                <Text style={{color: '#000000', fontSize: 16, fontWeight: 'bold'}}>Log In</Text>
+                <Text onPress={()=>navigation.navigate("Login")} style={{color: '#000000', fontSize: 16, fontWeight: 'bold'}}>Log In</Text>
             </View>
         </View>
         

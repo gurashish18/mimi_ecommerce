@@ -2,15 +2,15 @@ import React, {useState, useContext, useEffect} from 'react';
 import {SafeAreaView,StyleSheet,View,Text,Image,Button,} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import Icon from 'react-native-vector-icons/MaterialIcons'
-// import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 const OnboardScreen = () => {
-    // const navigation = useNavigation()
+    const navigation = useNavigation()
     const onDone = () => {
-    //   navigation.navigate("OTPlogin")
+      navigation.navigate("Login")
     };
     const onSkip = () => {
-    //   navigation.navigate("OTPlogin")
+      navigation.navigate("Login")
     };
     const RenderItem = ({item}) => {
         return (

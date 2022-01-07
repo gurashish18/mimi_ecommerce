@@ -1,13 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import OnboardScreen from './Screens/OnboardScreen'
-import LoginScreen from './Screens/LoginScreen'
-import CreateAccountScreen from './Screens/CreateAccountScreen'
-import VerifyMobileScreen from './Screens/VerifyMobileScreen'
+import Navigation from './nav/Navigation'
 
 const App = () => {
   return (
-    <VerifyMobileScreen />
+    <Navigation />
   )
 }
 

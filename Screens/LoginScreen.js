@@ -2,8 +2,10 @@ import React, {useState} from 'react'
 import { StyleSheet, Text, View, ScrollView, Image } from 'react-native'
 import Button from '../components/Button'
 import Input from '../components/Input'
+import { useNavigation } from '@react-navigation/native'
 
 const LoginScreen = () => {
+    const navigation = useNavigation()
     const[email, setemail] = useState('')
     const[password, setpassword] = useState('')
     return (
@@ -25,7 +27,7 @@ const LoginScreen = () => {
 
                     <View style={{flexDirection: 'row', alignSelf: 'center', marginVertical: 20}}>
                         <Text style={{color: 'grey', fontSize: 16}}>Don't have an Account? </Text>
-                        <Text style={{color: '#000000', fontSize: 16, fontWeight: 'bold'}}>Create Account</Text>
+                        <Text onPress={()=>navigation.navigate("CreateAccount")} style={{color: '#000000', fontSize: 16, fontWeight: 'bold'}}>Create Account</Text>
                     </View>
                 </View>
                 
