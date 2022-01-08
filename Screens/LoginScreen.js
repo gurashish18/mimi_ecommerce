@@ -8,16 +8,15 @@ import {AuthContext} from '../nav/AuthProvider'
 
 const LoginScreen = () => {
     const navigation = useNavigation()
-    const[spinner, setspinner] = useState(false)
     const[email, setemail] = useState('')
     const[password, setpassword] = useState('')
-    const {login} = useContext(AuthContext)
+    const {login, spinner} = useContext(AuthContext)
 
-    const hanlelogin = () => {
-        setspinner(true)
-        login(email, password)
-        setspinner(false)
-    }
+    // const hanlelogin = () => {
+    //     setspinner(true)
+    //     login(email, password)
+    //     setspinner(false)
+    // }
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}} contentContainerStyle={styles.container}>
                 <Spinner
@@ -31,7 +30,7 @@ const LoginScreen = () => {
                 <View style={{width: '100%', paddingHorizontal: 20}}>
                     <Input value={email} setvalue={setemail} placeholder="Username" icon="link"/>
                     <Input value={password} setvalue={setpassword} placeholder="Password" icon="link"/>
-                    <Button buttontext="Log In" onPress={hanlelogin}/>
+                    <Button buttontext="Log In" onPress={() =>login(email, password)}/>
 
                     <Text style={{alignSelf: 'center', marginVertical: 10, fontSize: 18, color: 'grey'}}>Or</Text>
 
