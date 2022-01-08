@@ -12,7 +12,7 @@ const LoginScreen = () => {
     const[password, setpassword] = useState('')
     const[emailerr, setemailerr]  = useState('')
     const[passerr, setpasserr]  = useState('')
-    const {login, spinner, googleLogin} = useContext(AuthContext)
+    const {login, spinner, googleLogin, facebookLogin} = useContext(AuthContext)
 
     const emailValidation = () => {
         const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -62,7 +62,7 @@ const LoginScreen = () => {
                         <TouchableOpacity onPress={()=>googleLogin()}>
                             <Image  source={require('../assets/google_logo.png')} style={{height: 50, width: 50, resizeMode: 'contain'}}/>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={()=>facebookLogin()}>
                             <Image source={require('../assets/fb_logo.png')} style={{height: 40, width: 40, resizeMode: 'contain'}}/>
                         </TouchableOpacity>
                     </View>
