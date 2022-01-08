@@ -4,6 +4,7 @@ import Button from '../components/Button'
 import Input from '../components/Input'
 import { useNavigation } from '@react-navigation/native'
 import {AuthContext} from '../nav/AuthProvider'
+import Spinner from 'react-native-loading-spinner-overlay';
 
 const CreateAccountScreen = () => {
     const navigation = useNavigation()
@@ -16,7 +17,7 @@ const CreateAccountScreen = () => {
     const[emailerr, setemailerr] = useState('');
     const[passerr, setpasserr] = useState('');
 
-    const {register} = useContext(AuthContext)
+    const {register, spinner} = useContext(AuthContext)
 
     const nameValidation = () => {
         console.log("name checking")
@@ -56,6 +57,12 @@ const CreateAccountScreen = () => {
     }
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}} contentContainerStyle={styles.container}>
+            <Spinner
+                color='#F72121'
+                visible={spinner}
+                textContent={'Loading...'}
+                textStyle={{color: '#F72121'}}
+            />
         <Image source={require('../assets/mimi_logo.png')} style={{width: 100, height: 100, resizeMode: 'contain'}}/>
         <Text style={{fontSize: 30, color: '#000000', fontWeight: 'bold'}}>Create Account</Text>
         <View style={{width: '100%', paddingHorizontal: 20}}>

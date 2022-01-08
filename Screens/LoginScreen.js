@@ -40,10 +40,10 @@ const LoginScreen = () => {
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}} contentContainerStyle={styles.container}>
                 <Spinner
-                    color='#000000'
+                    color='#F72121'
                     visible={spinner}
                     textContent={'Loading...'}
-                    textStyle={{color: '#000000'}}
+                    textStyle={{color: '#F72121'}}
                 />
                 <Image source={require('../assets/mimi_logo.png')} style={{width: 100, height: 100, resizeMode: 'contain'}}/>
                 <Text style={{fontSize: 30, color: '#000000', fontWeight: 'bold'}}>Log In</Text>
