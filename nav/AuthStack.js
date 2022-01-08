@@ -5,10 +5,17 @@ import OnboardScreen from '../Screens/OnboardScreen'
 import LoginScreen from '../Screens/LoginScreen'
 import CreateAccountScreen from '../Screens/CreateAccountScreen'
 import VerifyMobileScreen from '../Screens/VerifyMobileScreen'
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
 const Stack = createNativeStackNavigator();
 
 const AuthStack = () => {
+
+    useEffect(() => {
+        GoogleSignin.configure({
+            webClientId: '617954161772-js55agmrc62f4m198vf7gl7d61m1usak.apps.googleusercontent.com',
+          });
+    }, [])
     return (
         <Stack.Navigator initialRouteName={"Onboard"}>
             <Stack.Screen name="Onboard" component={OnboardScreen} options={{headerShown: false}}/>

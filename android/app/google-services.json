@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "617954161772-hmf9v149hmf9oculitq9r54dd0al6c19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mimi_ecommerce",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
           "client_id": "617954161772-js55agmrc62f4m198vf7gl7d61m1usak.apps.googleusercontent.com",
           "client_type": 3
         }

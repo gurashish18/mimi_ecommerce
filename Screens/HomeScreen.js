@@ -7,7 +7,7 @@ const HomeScreen = () => {
     const {logout, user} = useContext(AuthContext)
     return (
         <View style={{flex:1, alignItems: 'center', justifyContent: 'center', marginHorizontal: 20}}>
-            <Text>Welcome {user.uid}</Text>
+            <Text style={{color: '#000000'}}>Welcome {user.uid}</Text>
             <Button buttontext="Logout" onPress={()=>logout()}/>
         </View>
     )
