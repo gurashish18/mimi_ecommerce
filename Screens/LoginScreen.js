@@ -10,13 +10,33 @@ const LoginScreen = () => {
     const navigation = useNavigation()
     const[email, setemail] = useState('')
     const[password, setpassword] = useState('')
+    const[emailerr, setemailerr]  = useState('')
+    const[passerr, setpasserr]  = useState('')
     const {login, spinner} = useContext(AuthContext)
 
-    // const hanlelogin = () => {
-    //     setspinner(true)
-    //     login(email, password)
-    //     setspinner(false)
-    // }
+    const emailValidation = () => {
+        const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if(!email || regex.test(email) === false){
+            setemailerr("**Email is not valid")
+            return false;
+        }
+        setemailerr('')
+        return true;
+    }
+
+    const passwordValidation = () => {
+        if(!password || password.length < 6){
+            setpasserr("**Password length >= 6")
+            return false;
+        }
+        setpasserr('')
+        return true;
+    }
+
+    const hanlelogin = () => {
+        if(emailValidation() && passwordValidation())
+            login(email, password)
+    }
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}} contentContainerStyle={styles.container}>
                 <Spinner
@@ -29,8 +49,12 @@ const LoginScreen = () => {
                 <Text style={{fontSize: 30, color: '#000000', fontWeight: 'bold'}}>Log In</Text>
                 <View style={{width: '100%', paddingHorizontal: 20}}>
                     <Input value={email} setvalue={setemail} placeholder="Username" icon="link"/>
+                    <Text style={{color: 'red', fontStyle: 'italic'}}>{emailerr}</Text>
+
                     <Input value={password} setvalue={setpassword} placeholder="Password" icon="link"/>
-                    <Button buttontext="Log In" onPress={() =>login(email, password)}/>
+                    <Text style={{color: 'red', fontStyle: 'italic'}}>{passerr}</Text>
+
+                    <Button buttontext="Log In" onPress={hanlelogin}/>
 
                     <Text style={{alignSelf: 'center', marginVertical: 10, fontSize: 18, color: 'grey'}}>Or</Text>
 
