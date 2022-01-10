@@ -55,6 +55,10 @@ const LoginScreen = () => {
                     <Text style={{color: 'red', fontStyle: 'italic'}}>{passerr}</Text>
 
                     <Button buttontext="Log In" onPress={hanlelogin}/>
+                    
+                    <TouchableOpacity onPress={()=>navigation.navigate("ForgotPassword")}>
+                        <Text style={{color: 'grey', fontSize: 16, alignSelf: 'center', marginTop: 20}}>Forgot Password?</Text>
+                    </TouchableOpacity>
 
                     <Text style={{alignSelf: 'center', marginVertical: 10, fontSize: 18, color: 'grey'}}>Or</Text>
 

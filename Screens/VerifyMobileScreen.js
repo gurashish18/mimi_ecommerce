@@ -2,43 +2,44 @@ import React, {useContext, useState, useEffect} from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import OTPInputView from '@twotalltotems/react-native-otp-input'
 import Button from '../components/Button'
+import auth from '@react-native-firebase/auth';
 
-const VerifyMobileScreen = () => {
+const VerifyMobileScreen = ({ route: { params: { name, email, mobile, password } }}) => {
     const [otp, setotp] = useState('')
     const [confirm, setConfirm] = useState(null);
-     // useEffect(() => {
-    //   signInWithPhoneNumber();
-    // }, [])
 
-    // async function signInWithPhoneNumber() {
-    //   setspinner(true)
-    //   try{
-    //      const code = '+91'
-    //      const pno = code.concat(" ", phoneNumber)
-    //      console.log(pno)
-    //      const confirmation = await auth().signInWithPhoneNumber(pno);
-    //      setConfirm(confirmation);
-    //    }catch(e){
-    //       console.log(e)
-    //   }
-    //   setspinner(false)
-    //  }
-    //  async function confirmCode() {
-    //   setspinner(true)
-    //   try{
-    //     const response = await confirm.confirm(otp);
-    //     if(response){
-    //       navigation.navigate("BottomTab")
-    //     }
-    //   } catch(e){
-    //       console.log(e)
-    //   }
-    //   setspinner(false)
-    // }
+     useEffect(() => {
+      verifyPhoneNumber()
+    }, [])
+
+    async function verifyPhoneNumber() {
+      const code = '+91'
+      const pno = code.concat(" ", mobile)
+      const confirmation = await auth().verifyPhoneNumber(pno);
+      setConfirm(confirmation);
+    }
+
+    async function createUserWithEmailAndPassword() {
+      try{
+         await auth().createUserWithEmailAndPassword(email ,password);
+       }catch(e){
+          console.log(e)
+      }
+     }
+     async function confirmCode() {
+      try{
+        const response = await confirm.confirm(otp);
+        if(response){
+          createUserWithEmailAndPassword()
+          alert("Successful verify")
+        }
+      } catch(e){
+          console.log(e)
+      }
+    }
     return (
         <View style={{flex:1, backgroundColor: '#ffffff', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 20}}>
-            <Text style={{fontSize: 30, color: '#000000', fontWeight: 'bold'}}>Verify Details</Text>
-            <Text style={{fontSize: 20, marginVertical: 20}}>Enter code sent to 9729756418</Text>
+            <Text style={{fontSize: 20, color: '#000000', fontWeight: 'bold'}}>Enter code sent to +91 {mobile}</Text>
             <OTPInputView
                 style={{width: '80%', height: 200, color: '#000000'}}
                 pinCount={6}
@@ -49,7 +50,7 @@ const VerifyMobileScreen = () => {
                 codeInputHighlightStyle={{borderColor: '#F72121'}}
                 onCodeFilled = {code => {} }
             />
-            <Button buttontext="Verify"/>
+            <Button buttontext="Verify" onPress={()=>confirmCode()}/>
         </View>
     )
 }

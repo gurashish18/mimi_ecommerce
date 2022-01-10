@@ -16,21 +16,29 @@ const CreateAccountScreen = () => {
     const[nameerr, setnameerr] = useState('');
     const[emailerr, setemailerr] = useState('');
     const[passerr, setpasserr] = useState('');
+    const[mobilerr, setmobilerr] = useState('')
 
     const {register, spinner} = useContext(AuthContext)
 
     const nameValidation = () => {
-        console.log("name checking")
         if(!name || name.length < 2){
-            setnameerr("**Not a valid name")
+            setnameerr("**Name is not valid")
             return false;
         }
         setnameerr('')
         return true; 
     }
 
+    const phoneValidation = () => {
+        if(!mobile || mobile.length < 10){
+            setmobilerr("**Phone number is not valid")
+            return false;
+        }
+        setmobilerr('')
+        return true; 
+    }
+
     const emailValidation = () => {
-        console.log("email checking")
         const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         if(!email || regex.test(email) === false){
             setemailerr("**Email is not valid")
@@ -41,7 +49,6 @@ const CreateAccountScreen = () => {
     }
 
     const passwordValidation = () => {
-        console.log("password checking")
         if(!password || password.length < 6){
             setpasserr("**Password length >= 6")
             return false;
@@ -51,9 +58,9 @@ const CreateAccountScreen = () => {
     }
 
     const handleRegister = () => {
-        console.log("Button pressed")
-        if(nameValidation() && emailValidation() && passwordValidation())
+        if(nameValidation() && phoneValidation() && emailValidation() && passwordValidation())
             register(email, password, name, mobile)
+            // navigation.navigate("OTPverify", {name, mobile, email, password})
     }
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}} contentContainerStyle={styles.container}>
@@ -67,9 +74,10 @@ const CreateAccountScreen = () => {
         <Text style={{fontSize: 30, color: '#000000', fontWeight: 'bold'}}>Create Account</Text>
         <View style={{width: '100%', paddingHorizontal: 20}}>
             <Input value={name} setvalue={setname} placeholder="Fullname" icon="user"/>
-            <Text style={{color: 'red'}}>{nameerr}</Text>
+            <Text style={{color: 'red', fontStyle: 'italic'}}>{nameerr}</Text>
 
             <Input value={mobile} setvalue={setmobile} placeholder="Mobile Number" icon="link"/>
+            <Text style={{color: 'red', fontStyle: "italic"}}>{mobilerr}</Text>
 
             <Input value={email} setvalue={setemail} placeholder="Username" icon="user"/>
             <Text style={{color: 'red', fontStyle: 'italic'}}>{emailerr}</Text>

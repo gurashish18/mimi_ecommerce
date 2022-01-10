@@ -5,6 +5,7 @@ import OnboardScreen from '../Screens/OnboardScreen'
 import LoginScreen from '../Screens/LoginScreen'
 import CreateAccountScreen from '../Screens/CreateAccountScreen'
 import VerifyMobileScreen from '../Screens/VerifyMobileScreen'
+import ForgotPasswordScreen from '../Screens/ForgotPasswordScreen';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
 const Stack = createNativeStackNavigator();
@@ -22,6 +23,7 @@ const AuthStack = () => {
             <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}}/>
             <Stack.Screen name="CreateAccount" component={CreateAccountScreen} options={{ headerShown: false }}/>
             <Stack.Screen name="OTPverify" component={VerifyMobileScreen} options={{ title: 'Verify OTP' }}/>
+            <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} options={{ title: 'Reset Password' }}/>
         </Stack.Navigator>
     )
 }
