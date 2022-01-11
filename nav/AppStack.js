@@ -1,12 +1,26 @@
 import React from 'react'
 import {Image} from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import HomeScreen from '../Screens/HomeScreen';
 import CategoriesScreen from '../Screens/CategoriesScreen'
 import ProfileScreen from '../Screens/ProfileScreen'
+import ProductsScreen from '../Screens/ProductsScreen'
+import ProductScreen from '../Screens/ProductScreen'
 
 const Tab = createBottomTabNavigator()
+const Stack = createNativeStackNavigator();
+
+const ProductStack = () => {
+    return (
+            <Stack.Navigator screenOptions={{headerShown: false}}>
+                    <Stack.Screen name="Categories" component={CategoriesScreen} />
+                    <Stack.Screen name="Products" component={ProductsScreen} />
+                    <Stack.Screen name="Product" component={ProductScreen} /> 
+            </Stack.Navigator>
+    )
+}
 
 const AppStack = () => {
     return (
@@ -28,7 +42,7 @@ const AppStack = () => {
                 }}/>
                 <Tab.Screen
                     name="Categories Screen"
-                    component={CategoriesScreen}
+                    component={ProductStack}
                     options={{
                         tabBarLabel: 'Categories',
                         tabBarIcon: ({ color, size }) => (

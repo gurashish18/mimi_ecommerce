@@ -1,8 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image } from 'react-native'
 import{categories} from '../API/api'
+import { useNavigation } from '@react-navigation/native'
 
 const CategoriesScreen = () => {
+    const navigation = useNavigation()
     return (
         <FlatList
                 style={{backgroundColor: '#ffffff'}}
@@ -14,7 +16,7 @@ const CategoriesScreen = () => {
                 horizontal={false} 
                 data={categories} 
                 renderItem={({item, index}) => (
-                    <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginHorizontal: 20, marginVertical: 20, borderWidth: 1, padding: 10, borderRadius: 20}}>
+                    <TouchableOpacity onPress={()=>navigation.navigate("Products", {item})} style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginHorizontal: 20, marginVertical: 20, borderWidth: 1, padding: 10, borderRadius: 20}}>
                         <Image source={item.image} style={{height: 100, width: 100, resizeMode: 'contain'}}/>
                         <View>
                             <Text style={{color: '#000000', fontSize: 24, fontWeight: 'bold'}}>{item.name}</Text>

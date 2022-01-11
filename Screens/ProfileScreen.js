@@ -4,6 +4,7 @@ import {AuthContext} from '../nav/AuthProvider'
 import firestore from '@react-native-firebase/firestore';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import Button from '../components/Button'
+import { useNavigation } from '@react-navigation/native';
 
 const data = [
     {
@@ -27,6 +28,7 @@ const data = [
 ]
 
 const ProfileScreen = () => {
+    const navigation = useNavigation()
     const {user, logout} = useContext(AuthContext)
     const [userData, setUserData] = useState(null);
 
