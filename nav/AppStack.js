@@ -8,6 +8,7 @@ import CategoriesScreen from '../Screens/CategoriesScreen'
 import ProfileScreen from '../Screens/ProfileScreen'
 import ProductsScreen from '../Screens/ProductsScreen'
 import ProductScreen from '../Screens/ProductScreen'
+import WishlistScreen from '../Screens/WishlistScreen'
 
 const Tab = createBottomTabNavigator()
 const Stack = createNativeStackNavigator();
@@ -18,6 +19,7 @@ const ProductStack = () => {
                     <Stack.Screen name="Categories" component={CategoriesScreen} />
                     <Stack.Screen name="Products" component={ProductsScreen} />
                     <Stack.Screen name="Product" component={ProductScreen} /> 
+                    <Stack.Screen name="Wishlist" component={WishlistScreen} /> 
             </Stack.Navigator>
     )
 }
@@ -25,7 +27,7 @@ const ProductStack = () => {
 const AppStack = () => {
     return (
         <Tab.Navigator
-            initialRouteName="Home Screen"
+            initialRouteName="Categories Screen"
             screenOptions={{
                 tabBarActiveTintColor: '#000000',
                 headerShown: false,

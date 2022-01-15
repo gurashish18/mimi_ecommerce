@@ -39,7 +39,6 @@ const ProfileScreen = () => {
         .get()
         .then((documentSnapshot) => {
           if( documentSnapshot.exists ) {
-            console.log('User Data', documentSnapshot.data());
             setUserData(documentSnapshot.data());
           }
         })
@@ -47,7 +46,6 @@ const ProfileScreen = () => {
 
     useEffect(() => {
         getUser();
-        console.log(user.uid)
     }, []);
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}} contentContainerStyle={styles.container}>

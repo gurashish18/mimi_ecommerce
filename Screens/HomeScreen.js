@@ -23,7 +23,7 @@ const HomeScreen = () => {
                             <Image source={require('../assets/mimi_logo.png')} style={{height: 50, width: 50, resizeMode: 'contain'}}/>
                             <View style={{flexDirection: 'row', alignItems: 'center', width: '40%', justifyContent: 'space-evenly'}}>
                                 <Icon name="notifications-none" size={30} style={{color: '#000000'}}/>
-                                <Icon name="favorite-border" size={30} style={{color: '#000000'}}/>
+                                <Icon name="favorite-border" size={30} style={{color: '#000000'}} onPress={()=>navigation.navigate("Wishlist")}/>
                                 <Icon name="shopping-bag" size={30} style={{color: '#000000'}}/>
                             </View>
                         </View>

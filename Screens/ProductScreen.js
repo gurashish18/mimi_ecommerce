@@ -1,8 +1,10 @@
-import React from 'react'
-import { ScrollView, StyleSheet, Text, View, Image } from 'react-native'
+import React, {useContext, useEffect, useState} from 'react'
+import { ScrollView, StyleSheet, Text, View, Image, Alert } from 'react-native'
 import Button from '../components/Button'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import ImageSlider from '../components/ImageSlider'
+import firestore from '@react-native-firebase/firestore';
+import {AuthContext} from '../nav/AuthProvider'
 
 const sizes = [
     {
@@ -26,13 +28,42 @@ const sizes = [
         size: "XL"
     },
 ]
+
+
 const ProductScreen = ({ route: { params: { item } }}) => {
+    const {user} = useContext(AuthContext)
+
+    const AddtoWishlist = async () => {
+        await firestore()
+        .collection('users')
+        .doc(user.uid)
+        .collection('wishlist')
+        .add({
+          product: item,
+          favTime: firestore.Timestamp.fromDate(new Date()),
+        })
+        .then(() => {
+          console.log('Post Added!');
+          Alert.alert(
+            'Product added to wishlist!!',
+            'Product has been added to wishlist Successfully!',
+          );
+        })
+        .catch((error) => {
+          console.log('Something went wrong with added post to firestore.', error);
+        });
+      }
     return (
         <ScrollView style={{backgroundColor:'#ffffff', paddingHorizontal: 10}}>
-            {/* <Image source={{uri: item.image[0]}} style={{height: 350, width: '100%', resizeMode: 'contain'}}/> */}
             <ImageSlider data={item.image}/>
-            <Text style={{color: '#000000', fontSize: 24, fontWeight: 'bold'}}>{item.brand}</Text>
-            <Text style={{color: '#000000', fontSize: 20}}>{item.title}</Text>
+
+            <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                <View>
+                    <Text style={{color: '#000000', fontSize: 24, fontWeight: 'bold'}}>{item.brand}</Text>
+                    <Text style={{color: '#000000', fontSize: 20, maxWidth: 300}}>{item.title}</Text>
+                </View>
+                <Icon name="favorite-border" size={30} style={{color: '#000000'}} onPress={AddtoWishlist}/>
+            </View>
             <Text style={{color: 'grey', fontSize: 16}}>{item.description}</Text>
 
             <View style={{marginVertical: 10, flexDirection: 'row', alignItems: 'center'}}>
