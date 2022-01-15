@@ -28,7 +28,7 @@ const sizes = [
 ]
 const ProductScreen = ({ route: { params: { item } }}) => {
     return (
-        <ScrollView style={{marginHorizontal: 10}}>
+        <ScrollView style={{backgroundColor:'#ffffff', paddingHorizontal: 10}}>
             {/* <Image source={{uri: item.image[0]}} style={{height: 350, width: '100%', resizeMode: 'contain'}}/> */}
             <ImageSlider data={item.image}/>
             <Text style={{color: '#000000', fontSize: 24, fontWeight: 'bold'}}>{item.brand}</Text>

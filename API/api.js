@@ -317,3 +317,404 @@ export const categories = [
         ]
     },  
 ]
+
+export const offers1 = [
+    {
+        id:1,
+        imageuri:'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7ef5a141611303.57aca8e96a686.jpg',
+    },
+    {
+        id:2,
+        imageuri:'https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf8c5599420499.5f09d760d115b.jpg',
+    },
+    {
+        id:3,
+        imageuri:'https://image.shutterstock.com/image-vector/vector-white-shop-online-sign-260nw-1695240010.jpg',
+    },
+    {
+        id:4,
+        imageuri:'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7ef5a141611303.57aca8e96a686.jpg',
+    },
+    {
+        id:5,
+        imageuri:'https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf8c5599420499.5f09d760d115b.jpg',
+    }
+]
+
+export const winterwear = [
+    {
+        "id":1,
+        "brand": "HRX by Hrithik Roshan",
+        "title":"Men Olive Green Solid Sporty Jacket",
+        "price":1599,
+        "discount": 40,
+        "description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+        "image":[
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846944/2020/8/6/448009c3-ea40-462c-bde1-8b23b6ff25041596710361858-HRX-by-Hrithik-Roshan-Men-Jackets-1201596710359343-1.jpg"
+            },
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11846944/2020/8/6/e4b26504-e741-4010-af9b-8062e67d435a1596710361550-HRX-by-Hrithik-Roshan-Men-Jackets-1201596710359343-5.jpg"
+            }
+        ],
+        "rating":{"rate":4.1,"count":259}
+    },
+    {
+        "id":2,
+        "brand": "H&M",
+        "title":"Women Green Jumper",
+        "price":799,
+        "discount": 25,
+        "description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+        "image":[
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/44566655-b8e6-40e7-b1f2-af511792320d1637239081058Jumper1.jpg"
+            },
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/96602e8d-2777-4180-83a8-792c4cccdefb1637239080868Jumper3.jpg"
+            }
+        ],
+        "rating":{"rate":4.7,"count":500}
+    },
+    {
+        "id": 3,
+        "brand": "Nautica",
+        "title": "Men Red & Charcoal Grey Colourblocked Sporty Jacket",
+        "price": 4000,
+        "discount": 40,
+        "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+        "image": [
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14550640/2021/12/10/e2e0b10b-4609-415b-9e91-cab729417fcc1639133283674-Nautica-Men-Jackets-7021639133282932-1.jpg"
+            },
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14550640/2021/12/10/1f3a57ec-8a89-401f-bf04-05179abde37c1639133283655-Nautica-Men-Jackets-7021639133282932-3.jpg"
+            },
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14550640/2021/12/10/2b671a8e-6cd8-4e6e-8fc1-f7e4b1589a361639133283636-Nautica-Men-Jackets-7021639133282932-5.jpg"
+            }
+        ],
+        "rating": {"rate": 3.9,"count": 70}
+    },
+    {
+        "id": 4,
+        "brand": "SASSAFRAS",
+        "title": "Women Off-White Puff Sleeve Faux Fur Solid Sweatshirt",
+        "price": 899,
+        "discount": 15,
+        "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+        "image": [
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12737904/2020/10/19/7f550f4b-8a3d-4cac-bb53-6537161754711603103037956-SASSAFRAS-Women-Sweatshirts-1101603103036418-1.jpg"
+            },
+            {
+                imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12737904/2020/10/19/810a6aaf-6187-44ed-94ff-592f68d3f9181603103037778-SASSAFRAS-Women-Sweatshirts-1101603103036418-4.jpg"
+            }
+        ],
+        "rating": {"rate": 2.6,"count": 235}
+    },
+]
+export const subcategories = [
+    {
+        id: 1,
+        name: 'Shirts',
+        image: 'https://imgmedia.lbb.in/media/2020/05/5eac0e7c833b2b7acdc583b2_1588334204878.jpg',
+        products:[
+            {
+                "id":1,
+                "brand": "Dennis Lingo",
+                "title":"Men Pink Slim Fit Casual Shirt",
+                "price":1849,
+                "discount": 65,
+                "description":"Pink solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7488102/2019/8/22/936afc2c-4596-4c38-8f90-770d21935f281566454086747-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-3.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7488102/2019/8/22/b40e3089-2e16-4982-b6e9-9e5522d6725b1566454086712-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-5.jpg"
+                    }
+                ],
+                "rating":{"rate":4.1,"count":259}
+            },
+            {
+                "id":2,
+                "brand": "Levis",
+                "title":"Men Blue Slim Fit Faded Opaque Faded Casual Denim Shirt",
+                "price":2014,
+                "discount": 35,
+                "description":"Blue faded opaque casual denim shirt ,has a spread collar, button placket, 2 flap pocket, long regular sleeves, curved hem",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15506532/2021/9/29/7ce4b3ac-e2dd-4125-bb7a-2235a5d72beb1632918323726-Levis-Men-Shirts-3741632918323174-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15506532/2021/9/29/e423b20b-e78d-48cd-9d7f-37042f4362321632918323717-Levis-Men-Shirts-3741632918323174-2.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15506532/2021/9/29/642043c2-94af-4511-885d-5973854569a41632918323692-Levis-Men-Shirts-3741632918323174-5.jpg"
+                    }
+                ],
+                "rating":{"rate":4.7,"count":500}
+            },
+            {
+                "id": 3,
+                "brand": "HIGHLANDER",
+                "title": "Men Brown & Black Slim Fit Checked Casual Shirt",
+                "price": 1299,
+                "discount": 40,
+                "description": "Brown and black checked casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
+                "image": [
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7324885/2019/12/4/f383d293-415a-4606-ab12-cc07ab603ec41575437710624-HIGHLANDER-Men-Brown--Black-Slim-Fit-Checked-Casual-Shirt-81-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7324885/2019/12/4/0a086261-8e03-47a9-96ca-d4ae21186eac1575437710569-HIGHLANDER-Men-Brown--Black-Slim-Fit-Checked-Casual-Shirt-81-2.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7324885/2019/12/4/c2ee3efa-c072-4b17-ba7c-7abe147de15a1575437710382-HIGHLANDER-Men-Brown--Black-Slim-Fit-Checked-Casual-Shirt-81-6.jpg"
+                    }
+                ],
+                "rating": {"rate": 3.9,"count": 70}
+            },
+        ]
+    }, 
+    {
+        id: 2,
+        name: 'Casual Shoes',
+        image: 'https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/26902/248904/2019-Casual-Shoes-Men-Flat-Sneakers-Breathable-Fashion-Mesh-Mens-Trainers-Shoes-Summer-Sneakers-Men-Running__04818.1551090513.jpg?c=2',
+        products:[
+            {
+                "id":1,
+                "brand": "HIGHLANDER",
+                "title":"Men White Sneakers",
+                "price":1990,
+                "discount": 55,
+                "description":"A pair of round-toe white sneakers, has regular styling, lace-up detail,Synthetic Leather upper,Cushioned footbed,Textured and patterned outsole,Warranty: 3 months,Warranty provided by brand/manufacturer",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11097156/2019/12/10/b8d45a95-161f-442c-9e69-6997e05f25ff1575980861980-HIGHLANDER-Men-White-Sneakers-4301575980859728-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11097156/2020/11/18/be5074a1-5bd6-4d1d-a24a-668e70b51f851605700663736-HIGHLANDER-Men-White-Sneakers-5671605700662428-5.jpg"
+                    },
+                ],
+                "rating":{"rate":4.1,"count":259}
+            },
+            {
+                "id":2,
+                "brand": "Puma",
+                "title":"Men Black Propel 3D Sneakers",
+                "price":3999,
+                "discount": 45,
+                "description":"Mesh upper for breathability,Lace closure for snug fit,Heel pull tab for easy on/off",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8129101/2019/1/8/94e4a766-077e-4e3c-b3e8-074a16db8d231546927176145-Puma-Men-Casual-Shoes-5971546927175367-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8129101/2019/1/8/0baa9a75-e813-49c6-b556-05c4a972b1111546927176106-Puma-Men-Casual-Shoes-5971546927175367-4.jpg"
+                    },
+                ],
+                "rating":{"rate":4.7,"count":500}
+            },
+
+        ]
+    }, 
+    {
+        id: 3,
+        name: 'Jeans',
+        image: 'https://www.blackicingstore.com/blackicingstore/images/jeans-item.jpg',
+        products:[
+            {
+                "id":1,
+                "brand": "HIGHLANDER",
+                "title":"Men Blue Tapered Fit Mid-Rise Clean Look Stretchable Jeans",
+                "price":1849,
+                "discount": 65,
+                "description":"Pink solid casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/3/8/ffc74fa7-34a5-4480-87a3-ba5342a6454e1552002945929-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/3/8/5a619825-4645-4109-bd87-637259b7492d1552002946032-5.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/3/8/3c0e074a-14c0-47a0-bdde-7facccccff681552002946005-4.jpg"
+                    }
+                ],
+                "rating":{"rate":4.1,"count":259}
+            },
+            {
+                "id":2,
+                "brand": "Roadster",
+                "title":"Men Blue Skinny Fit Mid-Rise Mildly Distressed Stretchable Jeans",
+                "price":2014,
+                "discount": 35,
+                "description":"Blue faded opaque casual denim shirt ,has a spread collar, button placket, 2 flap pocket, long regular sleeves, curved hem",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2524977/2018/7/27/58bee568-4d0a-4dec-a364-50623789d42c1532693715068-Roadster-Men-Jeans-1371532693713186-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2524977/2018/7/27/48a65985-03a5-425a-9fcb-0122a9c8af521532693715022-Roadster-Men-Jeans-1371532693713186-3.jpg"
+                    },
+                ],
+                "rating":{"rate":4.7,"count":500}
+            },
+            {
+                "id": 3,
+                "brand": "WROGN",
+                "title": "Men Black Slim Fit Mid-Rise Clean Look Jeans",
+                "price": 1299,
+                "discount": 40,
+                "description": "Brown and black checked casual shirt, has a spread collar, long sleeves, curved hem, one patch pocket",
+                "image": [
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1427622/2018/6/8/e7ea94fb-a660-4676-bfb1-250c2f9912531528439346331-WROGN-Men-Black-Slim-Fit-Mid-Rise-Clean-Look-Jeans-395152843-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1427622/2018/6/8/541c6f04-b454-4c27-819b-e043668f35db1528439346259-WROGN-Men-Black-Slim-Fit-Mid-Rise-Clean-Look-Jeans-395152843-4.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1427622/2018/6/8/bac9ff4f-765b-4c13-b743-4b270b0b0f0b1528439346237-WROGN-Men-Black-Slim-Fit-Mid-Rise-Clean-Look-Jeans-395152843-5.jpg"
+                    }
+                ],
+                "rating": {"rate": 3.9,"count": 70}
+            },
+        ]
+    }, 
+    {
+        id: 4,
+        name: 'Jackets',
+        image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-down-jackets-a-1634223545.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
+        products:[
+            {
+                "id":1,
+                "brand": "Jack & Jones",
+                "title":"Men Green & Black Colourblocked Lightweight Puffer Jacket",
+                "price":1990,
+                "discount": 55,
+                "description":"A pair of round-toe white sneakers, has regular styling, lace-up detail,Synthetic Leather upper,Cushioned footbed,Textured and patterned outsole,Warranty: 3 months,Warranty provided by brand/manufacturer",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15497772/2021/9/17/9f87ad0c-6626-4b7d-a2c3-c5562a6525ee1631881313983JackJonesMenGreenColourblockedLightweightPufferJacket1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15497772/2021/9/17/3b866ff5-3ab5-44f4-8494-0d11d81e591e1631881314343JackJonesMenGreenColourblockedLightweightPufferJacket4.jpg"
+                    },
+                ],
+                "rating":{"rate":4.1,"count":259}
+            },
+            {
+                "id":2,
+                "brand": "Tommy Hilfiger",
+                "title":"Men Navy Blue Solid Padded Jacket",
+                "price":3999,
+                "discount": 45,
+                "description":"Mesh upper for breathability,Lace closure for snug fit,Heel pull tab for easy on/off",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14590206/2021/7/14/4ca6d020-061f-4572-a23c-231bcd37f0021626262461208-Tommy-Hilfiger-Men-Jackets-6341626262460636-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14590206/2021/7/14/6d9b16c6-c4f8-45ef-a288-3498f28bef5b1626262461201-Tommy-Hilfiger-Men-Jackets-6341626262460636-2.jpg"
+                    },
+                ],
+                "rating":{"rate":4.7,"count":500}
+            },
+
+        ]
+    }, 
+    {
+        id: 5,
+        name: 'Sweaters',
+        image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cable-knit-1610640392.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
+        products:[
+            {
+                "id":1,
+                "brand": "Roadster",
+                "title":"Men Black & Teal Blue Jacquard Checked Pullover",
+                "price":1990,
+                "discount": 55,
+                "description":"A pair of round-toe white sneakers, has regular styling, lace-up detail,Synthetic Leather upper,Cushioned footbed,Textured and patterned outsole,Warranty: 3 months,Warranty provided by brand/manufacturer",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15654428/2021/10/6/20733fdc-554a-4990-b80b-6046b4b0ea5b1633503401601-Computerised-Jacquard-Sweater-2231633503401076-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15654428/2021/10/6/41c19f39-6154-4b7e-a152-c705c2db82021633503401579-Computerised-Jacquard-Sweater-2231633503401076-2.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15654428/2021/10/6/835093f9-21cb-4110-b4e0-9211eb3c76e41633503401515-Computerised-Jacquard-Sweater-2231633503401076-5.jpg"
+                    },
+                ],
+                "rating":{"rate":4.1,"count":259}
+            },
+            {
+                "id":2,
+                "brand": "Roadster",
+                "title":"Men Brown Solid Cable Knit Pullover",
+                "price":3999,
+                "discount": 45,
+                "description":"Mesh upper for breathability,Lace closure for snug fit,Heel pull tab for easy on/off",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15654418/2021/10/5/613fa0de-bc8e-46e6-a0cb-36950f0ebfb81633417452018-Computerised-Jacquard-Sweater-7421633417451443-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15654418/2021/10/5/9328143c-7e20-4413-96b2-19edbf04e09e1633417451997-Computerised-Jacquard-Sweater-7421633417451443-2.jpg"
+                    },
+                ],
+                "rating":{"rate":4.7,"count":500}
+            },
+
+        ]
+    }, 
+    {
+        id: 5,
+        name: 'Kurtas',
+        image: 'https://assets.ajio.com/medias/sys_master/root/20210403/Zire/6068c875aeb269a9e338b92b/-1117Wx1400H-461924744-black-MODEL.jpg',
+        products:[
+            {
+                "id":1,
+                "brand": "Soch",
+                "title":"Women Navy Blue & Green Ethnic Motifs Kurta",
+                "price":1990,
+                "discount": 55,
+                "description":"A pair of round-toe white sneakers, has regular styling, lace-up detail,Synthetic Leather upper,Cushioned footbed,Textured and patterned outsole,Warranty: 3 months,Warranty provided by brand/manufacturer",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16470986/2021/12/11/4f7f5627-45a2-4b10-ae80-ab089690d9c21639198571401SochWomenNavyBluePaisleyAnarkaliKurta1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16470986/2021/12/11/1b9c52c3-faa3-4e00-af8f-625788c236ca1639198571514SochWomenNavyBluePaisleyAnarkaliKurta3.jpg"
+                    },
+                ],
+                "rating":{"rate":4.1,"count":259}
+            },
+            {
+                "id":2,
+                "brand": "Anouk",
+                "title":"Women Mustard Yellow Yoke Design Foil Printed Kurta with Trousers & Dupatta",
+                "price":3999,
+                "discount": 45,
+                "description":"Mesh upper for breathability,Lace closure for snug fit,Heel pull tab for easy on/off",
+                "image":[
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13902678/2021/4/6/a5dfcb9a-af2a-4ed8-98bf-e10a8b3b5a891617704827106-Anouk-Women-Kurta-Sets-911617704825967-1.jpg"
+                    },
+                    {
+                        imageuri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13902678/2021/4/6/ac76124e-e6f5-4a66-a8fe-8116e1eaf8951617704827086-Anouk-Women-Kurta-Sets-911617704825967-2.jpg"
+                    },
+                ],
+                "rating":{"rate":4.7,"count":500}
+            },
+
+        ]
+    }, 
+]

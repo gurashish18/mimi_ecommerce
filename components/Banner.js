@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image, Dimensions } from 'react-native'
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 
 const WINDOW_HEIGHT = Dimensions.get("window").height
-const SLIDER_HEIGHT = Math.round(WINDOW_HEIGHT * 0.45)
+const SLIDER_HEIGHT = Math.round(WINDOW_HEIGHT * 0.3)
 const SLIDER_WIDTH = Dimensions.get('window').width
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH)
 
@@ -15,7 +15,7 @@ const CarouselCardItem = ({ item, index }) => {
     )
 }
 
-const ImageSlider = ({data}) => {
+const Banner = ({data}) => {
     const isCarousel = React.useRef(null)
     const [index, setIndex] = React.useState(0)
     return (
@@ -38,8 +38,8 @@ const ImageSlider = ({data}) => {
             activeDotIndex={index}
             carouselRef={isCarousel}
             dotStyle={{
-                width: 10,
-                height: 10,
+                width: 5,
+                height: 5,
                 borderRadius: 5,
                 marginHorizontal: 0,
                 backgroundColor: '#000000'
@@ -52,16 +52,16 @@ const ImageSlider = ({data}) => {
     )
 }
 
-export default ImageSlider
+export default Banner
 
 const styles = StyleSheet.create({
-  container: {
-    width: ITEM_WIDTH,
-    backgroundColor: '#ffffff'
-  },
-  image: {
-    width: ITEM_WIDTH,
-    height: SLIDER_HEIGHT,
-    resizeMode: 'contain'
-  },
+    container: {
+        width: ITEM_WIDTH,
+        backgroundColor: '#ffffff'
+      },
+      image: {
+        width: ITEM_WIDTH,
+        height: 180,
+        resizeMode: 'contain'
+      },
 })

@@ -27,10 +27,12 @@ const ProductsScreen = ({ route: { params: { item } }}) => {
                                 </View>
                                 <Icon name="favorite-border" style={{color: 'red'}} size={25}/>
                             </View>
-                            <View style={{flexDirection: 'row', justifyContent: 'space-evenly'}}>
-                                <Text style={{color: 'grey', fontSize: 16,  textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>₹{item.price}</Text>
-                                <Text style={{color: '#39C16C', fontSize: 16, fontWeight: 'bold'}}>₹{item.price - item.price * (item.discount/100)}</Text>
-                                <Text style={{color: 'red', fontSize: 16}}>{item.discount}% OFF</Text>
+                            <View style={{flexDirection: 'column'}}>
+                                <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                                    <Text style={{color: 'grey', fontSize: 16,  textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>₹{item.price}</Text>
+                                    <Text style={{color: '#39C16C', fontSize: 16, fontWeight: 'bold'}}>₹{(item.price - item.price * (item.discount/100)).toFixed(2)}</Text>
+                                </View>
+                                <Text style={{color: 'red', fontSize: 16}}>({item.discount}% OFF)</Text>
                             </View>
                         </View>
                     </TouchableOpacity>
