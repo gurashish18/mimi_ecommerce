@@ -4,6 +4,7 @@ export const categories = [
         name: 'New Arrival',
         text: 'T-Shirts, Shirts, Jeans, Shoes,...',
         image: require('../assets/newarrival.png'),
+        backgroundColor: '#ef6c00',
         products:[
             {
                 "id":1,
@@ -68,6 +69,7 @@ export const categories = [
         name: 'Men',
         text: 'T-Shirts, Shirts, Jeans, Shoes,...',
         image: require('../assets/man.png'),
+        backgroundColor: '#0277bd',
         products:[
             {
                 "id":1,
@@ -133,6 +135,7 @@ export const categories = [
         name: 'Women',
         text: 'T-Shirts, Shirts, Jeans, Shoes,...',
         image: require('../assets/woman.png'),
+        backgroundColor: '#f50057',
         products:[
             {
                 "id": 1,
@@ -235,6 +238,7 @@ export const categories = [
         name: 'Kids',
         text: 'T-Shirts, Shirts, Jeans, Shoes,...',
         image: require('../assets/kids.png'),
+        backgroundColor: '#ff3d00',
         products:[
             {
                 "id": 1,
@@ -293,6 +297,7 @@ export const categories = [
         name: 'Accessories',
         text: 'Sunglasses, Wallets, Perfumes.....',
         image: require('../assets/accessories.png'),
+        backgroundColor: '#607d8b',
         products:[
             {
                 "id": 1,
