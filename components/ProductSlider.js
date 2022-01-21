@@ -12,9 +12,9 @@ const ProductSlider = ({data}) => {
                 <TouchableOpacity style={styles.item} onPress={()=>navigation.navigate("Product", {item})}>
                     <Image source={{uri: item.image[0].imageuri}} style={{height: 200, width: 180, resizeMode: 'cover', borderTopLeftRadius: 20, borderTopRightRadius: 20}}/>
                     <View style={{borderWidth: 0.25, width: '100%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, padding: 5}}>
-                        <Text style={{color: '#000000', fontSize: 16, fontWeight: 'bold'}}>{item.brand}</Text>
-                        <Text style={{color: 'grey', fontSize: 12}} numberOfLines={1} ellipsizeMode="tail">{item.title}</Text>
-                        <Text style={{color: '#000000', fontSize: 20}}>₹{item.price - item.price * (item.discount/100)}</Text>
+                        <Text style={{color: '#000000', fontSize: 14, fontWeight: 'bold'}}>{item.brand}</Text>
+                        <Text style={{color: 'grey', fontSize: 11}} numberOfLines={1} ellipsizeMode="tail">{item.title}</Text>
+                        <Text style={{color: '#000000', fontSize: 16}}>₹{item.price - item.price * (item.discount/100)}</Text>
                     </View>
                 </TouchableOpacity>
             )}
@@ -27,6 +27,7 @@ export default ProductSlider
 
 const styles = StyleSheet.create({
     item: {
+        minHeight: 250,
         width: 180,
         marginHorizontal: 15,
         alignItems: 'center',

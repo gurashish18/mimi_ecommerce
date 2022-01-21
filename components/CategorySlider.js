@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList, Image, TouchableOpacity } from 'react-native'
-import { categories } from '../API/api'
+import { subcategories } from '../API/api'
 import { useNavigation } from '@react-navigation/native'
 
 const CategorySlider = () => {
@@ -8,11 +8,11 @@ const CategorySlider = () => {
     return (
         <FlatList
             horizontal={true} 
-            data={categories} 
+            data={subcategories} 
             renderItem={({item, index}) => (
                 <TouchableOpacity style={styles.item} onPress={()=>navigation.navigate("Products", {item})}>
-                    <View style={{borderWidth:0.25, borderColor:'red', borderRadius: 50, padding: 10}}>
-                        <Image source={item.image} style={{height: 50, width: 50, resizeMode: 'contain'}}/>
+                    <View style={{padding: 10}}>
+                        <Image source={{uri: item.image}} style={{height: 60, width: 60, borderRadius: 150 / 2,overflow: "hidden"}}/>
                     </View>
                     <Text style={styles.title2}>{item.name}</Text>
                 </TouchableOpacity>
@@ -33,5 +33,6 @@ const styles = StyleSheet.create({
     },
     title2: {
         color:'#000000',
+        fontWeight: 'bold'
     }
 })

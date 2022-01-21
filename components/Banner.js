@@ -32,21 +32,8 @@ const Banner = ({data}) => {
           inactiveSlideShift={0}
           useScrollView={true}
           onSnapToItem={(index) => setIndex(index)}
-      />
-      <Pagination
-            dotsLength={data.length}
-            activeDotIndex={index}
-            carouselRef={isCarousel}
-            dotStyle={{
-                width: 5,
-                height: 5,
-                borderRadius: 5,
-                marginHorizontal: 0,
-                backgroundColor: '#000000'
-            }}
-            inactiveDotOpacity={0.4}
-            inactiveDotScale={0.6}
-            tappableDots={true}
+          autoplay={true}
+          autoplayInterval={3000}
         />
       </>
     )

@@ -345,6 +345,28 @@ export const offers1 = [
         imageuri:'https://mir-s3-cdn-cf.behance.net/project_modules/1400/cf8c5599420499.5f09d760d115b.jpg',
     }
 ]
+export const offers2 = [
+    {
+        id:1,
+        imageuri:'https://image.shutterstock.com/image-vector/spring-sale-poster-template-seasom-260nw-1906866046.jpg',
+    },
+    {
+        id:2,
+        imageuri:'https://cdn1.vectorstock.com/i/1000x1000/96/50/super-sale-banner-template-design-vector-23449650.jpg',
+    },
+    {
+        id:3,
+        imageuri:'https://cdn.dribbble.com/users/2972384/screenshots/6822537/sale-shopping.png',
+    },
+    {
+        id:4,
+        imageuri:'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7ef5a141611303.57aca8e96a686.jpg',
+    },
+    {
+        id:5,
+        imageuri:'https://i.pinimg.com/736x/82/d1/a7/82d1a7de8b4ace8d0fb3309117cec204.jpg',
+    }
+]
 
 export const winterwear = [
     {
@@ -681,7 +703,7 @@ export const subcategories = [
         ]
     }, 
     {
-        id: 5,
+        id: 6,
         name: 'Kurtas',
         image: 'https://assets.ajio.com/medias/sys_master/root/20210403/Zire/6068c875aeb269a9e338b92b/-1117Wx1400H-461924744-black-MODEL.jpg',
         products:[

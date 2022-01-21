@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image } from 'react-native'
-import { offers1 } from '../API/api'
+import { offers1, offers2 } from '../API/api'
 import Banner from '../components/Banner'
 import SearchBar from '../components/SearchBar'
 import CategorySlider from '../components/CategorySlider'
@@ -34,14 +34,17 @@ const HomeScreen = () => {
 
                         <Banner data={offers1}/>
 
+                        <Image style={{width: '100%', height: 120, resizeMode: 'cover'}} source={{uri: 'https://www.crushpixel.com/big-static18/preview4/super-sale-banner-template-design-2766425.jpg'}}/>
 
-                        <Text style={{color: '#F72121', fontSize: 20, fontWeight: 'bold', alignSelf: 'center', marginVertical: 10}}>Must-Have Winter Wear</Text>
-                        <ProductSlider data={winterwear}/>
+                        <View style={{marginVertical: 5}}>
+                            <Text style={{color: '#F72121', fontSize: 20, fontWeight: 'bold', alignSelf: 'center'}}>Must-Have Winter Wear</Text>
+                            <ProductSlider data={winterwear}/>
+                        </View>
 
 
-                        <Banner data={offers1}/>
+                        <Banner data={offers2}/>
 
-                        <Text style={{color: '#F72121', fontSize: 20, fontWeight: 'bold', alignSelf: 'center', marginVertical: 10}}>Men's Hours</Text>
+                        <Text style={{color: '#F72121', fontSize: 20, fontWeight: 'bold', alignSelf: 'center'}}>Men's Hours</Text>
                         <ProductSlider data={categories[1].products}/>
 
                         <Text style={{color: '#F72121', fontSize: 20, fontWeight: 'bold', alignSelf: 'center', marginVertical: 10}}>Categories to shop</Text>
